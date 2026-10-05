@@ -1,0 +1,143 @@
+{
+  "status": "pass",
+  "scope": "Full official Draft-7 v0.4 schema and current Palomar load_formalization_metadata; not hosted intake",
+  "formalization_sha256": "4ca12f8a92bca76c8421f7cc61c064aa35c60b49207b483b30d718c46ae882fd",
+  "schema_validation": "Draft7Validator.check_schema and all iter_errors: zero errors",
+  "palomar_validation": "Unmodified scripts.submission_contract.load_formalization_metadata: accepted",
+  "palomar_profile_version": 4,
+  "rule_sources": [
+    {
+      "path": "official-v0.4.schema.json",
+      "git_blob_sha1": "19f4a46a1bc0e4798dca7bcb7ed57281b1c8c996",
+      "display_url": "https://github.com/mathlib-initiative/formalization.yaml/blob/main/schema/v0.4.schema.json",
+      "content_normalized_final_newline": true,
+      "repository_commit": "99c678e569c7c4c0772db297c5ddd5e4c9b6322e",
+      "sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce"
+    },
+    {
+      "path": "PalomarSubmission/README.md",
+      "git_blob_sha1": "ba1b86d30cf60a9405292f6a253e601982261509",
+      "display_url": "https://github.com/PalomarRegistry/PalomarSubmission/blob/main/README.md",
+      "content_normalized_final_newline": true,
+      "repository_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "sha256": "9684b6b4704fff27ca8b8c9a795029b500c5c8612f15f350b7e3d03980339a88"
+    },
+    {
+      "path": "PalomarSubmission/scripts/submission_contract.py",
+      "git_blob_sha1": "9339a49417b283aec6e44c54041ce3747e6d04bf",
+      "display_url": "https://github.com/PalomarRegistry/PalomarSubmission/blob/main/scripts/submission_contract.py",
+      "content_normalized_final_newline": true,
+      "repository_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "sha256": "724f82211ef702e2d1b4e5012183e532bd8f8ba03ba676022e4722a420c5be75"
+    },
+    {
+      "path": "PalomarSubmission/formalization-profile.json",
+      "git_blob_sha1": "bd6ce3024a9606c2d14350621ba58434257d5b03",
+      "display_url": "https://github.com/PalomarRegistry/PalomarSubmission/blob/main/formalization-profile.json",
+      "content_normalized_final_newline": true,
+      "repository_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "sha256": "d695b838bbab69236f6e43afda6bd4d719a91099412351f89c3c2cfeb26d5131"
+    },
+    {
+      "path": "PalomarSubmission/requirements.txt",
+      "git_blob_sha1": "997dcf25617e8be1a8ced7db56f720c6ac94d175",
+      "display_url": "https://github.com/PalomarRegistry/PalomarSubmission/blob/main/requirements.txt",
+      "content_normalized_final_newline": true,
+      "repository_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "sha256": "5144c14fbd798e2eb36ce329776b1c7f15f309f007f93003c30d29ddd9261536"
+    },
+    {
+      "path": "PalomarPolicy/CONTRIBUTING.md",
+      "git_blob_sha1": "fadd7192040f9ec96cdc9da08ef74f09bbb0df2e",
+      "display_url": "https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md",
+      "content_normalized_final_newline": true,
+      "repository_commit": "96b034cc31a72a63d4f4041911dce337a85c9a04",
+      "sha256": "32cfaa48ef8d51a6959df46f73ccff1482d8bbf89b4bb3f878498b518b11edcd"
+    },
+    {
+      "path": "PalomarSubmission/scripts/orcid_validation.py",
+      "git_blob_sha1": "3f5ad0c7ae4bec5beea3450bc3d6b3c4a7ca00fe",
+      "display_url": "https://github.com/PalomarRegistry/PalomarSubmission/blob/main/scripts/orcid_validation.py",
+      "content_normalized_final_newline": true,
+      "repository_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "sha256": "2f368bf27a27f150da1a03f502ff0f45845fce1d5ebcf8dcfcf10908b5d360b7"
+    },
+    {
+      "path": "PalomarSubmission/scripts/verification_errors.py",
+      "git_blob_sha1": "b4665f25e2492d5ce86a3955e208211043e84c92",
+      "display_url": "https://github.com/PalomarRegistry/PalomarSubmission/blob/main/scripts/verification_errors.py",
+      "content_normalized_final_newline": true,
+      "repository_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "sha256": "ce58c4adc2f896a8ce69961d1f49ada7f571d86f9638a196f34197e3293cc776"
+    },
+    {
+      "path": "PalomarSubmission/taxonomies/arxiv-categories.json",
+      "git_blob_sha1": "74bc3f473bd4d113eb4446af5b42835341db1c52",
+      "display_url": "https://github.com/PalomarRegistry/PalomarSubmission/blob/main/taxonomies/arxiv-categories.json",
+      "content_normalized_final_newline": true,
+      "repository_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "sha256": "3b339cf140a914c50bab39b1c44df2437ce3984bd09bb2150fcb0edd60eda776"
+    },
+    {
+      "path": "PalomarSubmission/taxonomies/msc2020-codes.json",
+      "git_blob_sha1": "2de936d6722c0799d4e746792c6f1eefc7c2b965",
+      "display_url": "https://github.com/PalomarRegistry/PalomarSubmission/blob/main/taxonomies/msc2020-codes.json",
+      "content_normalized_final_newline": true,
+      "repository_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "sha256": "b4de69f1f562da01e0f4580cecc0ab36098f5297bb7cdd669c8ec3b0d3606060"
+    },
+    {
+      "path": "PalomarSubmission/browser-preflight-policy.json",
+      "git_blob_sha1": "151ba21e37997a3316f68d8a48db422c5d649314",
+      "display_url": "https://github.com/PalomarRegistry/PalomarSubmission/blob/main/browser-preflight-policy.json",
+      "content_normalized_final_newline": true,
+      "repository_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "sha256": "d3d0003b7a043695c5cb06c117253e248406e0723bbfe2cac50afb703fa97046"
+    },
+    {
+      "path": "PalomarSubmission/toolchains.json",
+      "git_blob_sha1": "9022506963e460170c7f90c3547e85e0891753c0",
+      "display_url": "https://github.com/PalomarRegistry/PalomarSubmission/blob/main/toolchains.json",
+      "content_normalized_final_newline": true,
+      "repository_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "sha256": "fd40347e4b586e7c42233b35f11efb006d25033b9a7ded9565719edf7aa98354"
+    },
+    {
+      "path": "PalomarSubmission/scripts/source_requirements.py",
+      "git_blob_sha1": "ad035503680fcf63202db4fc5c8b21f747c1cd24",
+      "display_url": "https://github.com/PalomarRegistry/PalomarSubmission/blob/d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44/scripts/source_requirements.py",
+      "content_normalized_final_newline": true,
+      "repository_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "sha256": "971950a45500ad8ba8c9061eb51716bc1c38f411ff877c447b6de527b23d2c6d"
+    }
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "yaml_version": "6.0.3",
+  "jsonschema_version": "4.25.1",
+  "source_type": "paper",
+  "isabelle_relationship": "independent",
+  "isabelle_note": "Isabelle/HOL boundary_bumping_theorem_closed has the same compact connected Hausdorff closed-proper-subset scope.",
+  "source_requirements": [
+    {
+      "file": "Solution.lean",
+      "module_header": true,
+      "lines": 115,
+      "bytes": 4992
+    },
+    {
+      "file": "Challenge.lean",
+      "module_header": true,
+      "lines": 39,
+      "bytes": 1382
+    },
+    {
+      "file": "scripts/CompareTypes.lean",
+      "module_header": true,
+      "lines": 27,
+      "bytes": 1112
+    }
+  ],
+  "lake_manifest_name": "\u00abboundary-bumping-lean\u00bb",
+  "git_dependencies": "All nine manifest entries use public GitHub URLs and full 40-character commit pins",
+  "license": "Canonical Apache-2.0 LICENSE SHA-256 matches existing verified project license"
+}

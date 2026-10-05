@@ -1,0 +1,13 @@
+.lake/
+.toolchain/
+__pycache__/
+*.olean
+*.ilean
+*.ir
+*.ir.sig
+*.olean.private
+*.olean.server
+dist/
+# Desktop-only cache bootstrap; portable verification is scripts/verify.py.
+scripts/copy_dependencies.py
+scripts/lean.py

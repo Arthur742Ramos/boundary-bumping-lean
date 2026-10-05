@@ -1,0 +1,64 @@
+version: "v0.4"
+project:
+  name: "Boundary Bumping for Closed Subsets of Continua"
+  description: >-
+    Every component of a proper closed subset of a compact connected Hausdorff
+    space meets its frontier. Through each point of the closed subset there is
+    a compact connected subset of it meeting that frontier.
+  authors: ["Arthur Freitas Ramos", "David Barros Hulak", "Ruy Jose Guerra Barretto de Queiroz"]
+  responsible_maintainers: ["Arthur Freitas Ramos", "David Barros Hulak", "Ruy Jose Guerra Barretto de Queiroz"]
+  license: "Apache-2.0"
+classification:
+  arxiv: ["math.GN"]
+  msc2020: ["54D05", "54D30"]
+sources:
+  - title: "Quotients of Bing Spaces"
+    authors: ["Richard N. Ball", "James N. Hagler", "Nicholas Ormes"]
+    type: paper
+    id: "https://cs.du.edu/~mathfiles/preprints/nsm-math-preprint-0609.pdf"
+    location: "Lemma 1.10; compact spaces are Hausdorff by the paper's convention"
+    relationship: formalizes
+    note: "Clopen neighborhoods of components and classical boundary bumping; no novelty claim."
+    author_endorsement: not-contacted
+related_formalizations:
+  - id: "https://isa-afp.org/browser_info/current/HOL/HOL-Analysis/Abstract_Topological_Spaces.html"
+    relationship: independent
+    note: "Isabelle/HOL boundary_bumping_theorem_closed has the same compact connected Hausdorff closed-proper-subset scope."
+  - id: "https://github.com/leanprover-community/mathlib4/tree/065356127b1dc0016f66b7283ce0ce2c4055aa55"
+    relationship: builds-on
+    note: "Mathlib component/quasicomponent, finite compactness, induced topology, and connectedness infrastructure."
+status:
+  scope: "Closed-subset Boundary Bumping Theorem and one component-witness subcontinuum corollary."
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Classical.choice", "Quot.sound"]
+automation:
+  methods:
+    - method: agent
+      models: ["OpenAI Codex (model identifier not recorded)"]
+      framework: "Lean 4 and Mathlib"
+      tool_setup: "AI-assisted proof construction, separate source review, serial bounded compiler and transitive axiom checks."
+  spend_usd: "not tracked"
+  notes: >-
+    Human direction selected the theorem and scope. The Challenge has exactly
+    two deliberate theorem holes, excluded from Solution's admission count.
+    No authored mathematical axioms or weakened targets are used.
+fidelity:
+  divergences: "No metric or local connectedness assumption; no mathematical hypothesis added beyond the stated compact connected Hausdorff setting."
+review:
+  status: "Local proof, transitive axiom, canonical Challenge, exact type, and independent AI source review gates pass; see VERIFICATION.md. No hosted Comparator run, human review, or registry submission."
+alignment:
+  namespace: "BoundaryBumping"
+  statements:
+    - source: "Classical closed-subset Boundary Bumping Theorem"
+      lean: "BoundaryBumping.closed_component_meets_frontier"
+      module: "Solution"
+      status: proved
+    - source: "Subcontinuum through a point, using its connected component"
+      lean: "BoundaryBumping.exists_subcontinuum_meeting_frontier"
+      module: "Solution"
+      status: proved
+acknowledgements: >-
+  Lean and Mathlib contributors, especially the connectedness and separation
+  infrastructure authors. Classical sources and prior Isabelle formalization
+  are credited in PROVENANCE.md. No author endorsement or human review claimed.

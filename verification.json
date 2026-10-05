@@ -1,0 +1,107 @@
+{
+  "scope": "Local compiler, transitive axiom, and exact type checks; not hosted Comparator",
+  "stages": [
+    {
+      "stage": "fresh solution compilation",
+      "argv": [
+        "c:\\Users\\arfreita\\.elan\\toolchains\\leanprover--lean4---v4.35.0-rc2\\bin\\lean.exe",
+        "-j1",
+        "-M3072",
+        "-DwarningAsError=true",
+        "-o",
+        "C:\\Users\\arfreita\\AppData\\Local\\Temp\\boundary-bumping-check-n2tcksmf\\Solution.olean",
+        "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\Solution.lean"
+      ],
+      "cwd": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10",
+      "LEAN_PATH": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "stage": "renamed dependency-only challenge",
+      "argv": [
+        "c:\\Users\\arfreita\\.elan\\toolchains\\leanprover--lean4---v4.35.0-rc2\\bin\\lean.exe",
+        "-j1",
+        "-M3072",
+        "-o",
+        "CanonicalChallenge_5f00128048d94c8f9f1cc5b68c765756.olean",
+        "CanonicalChallenge_5f00128048d94c8f9f1cc5b68c765756.lean"
+      ],
+      "cwd": "C:\\Users\\arfreita\\AppData\\Local\\Temp\\boundary-bumping-check-n2tcksmf",
+      "LEAN_PATH": "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean",
+      "exit_code": 0,
+      "output": "CanonicalChallenge_5f00128048d94c8f9f1cc5b68c765756.lean:27:8: warning: declaration uses `sorry`\nCanonicalChallenge_5f00128048d94c8f9f1cc5b68c765756.lean:33:8: warning: declaration uses `sorry`\n"
+    },
+    {
+      "stage": "exact selected type comparison",
+      "argv": [
+        "c:\\Users\\arfreita\\.elan\\toolchains\\leanprover--lean4---v4.35.0-rc2\\bin\\lean.exe",
+        "-j1",
+        "-M3072",
+        "--run",
+        "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\scripts\\CompareTypes.lean",
+        "CanonicalChallenge_5f00128048d94c8f9f1cc5b68c765756"
+      ],
+      "cwd": "C:\\Users\\arfreita\\AppData\\Local\\Temp\\boundary-bumping-check-n2tcksmf",
+      "LEAN_PATH": "C:\\Users\\arfreita\\AppData\\Local\\Temp\\boundary-bumping-check-n2tcksmf;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean",
+      "exit_code": 0,
+      "output": "EXACT TYPE MATCH BoundaryBumping.closed_component_meets_frontier\nEXACT TYPE MATCH BoundaryBumping.exists_subcontinuum_meeting_frontier\n"
+    },
+    {
+      "stage": "transitive axiom audit",
+      "argv": [
+        "c:\\Users\\arfreita\\.elan\\toolchains\\leanprover--lean4---v4.35.0-rc2\\bin\\lean.exe",
+        "-j1",
+        "-M3072",
+        "C:\\Users\\arfreita\\AppData\\Local\\Temp\\boundary-bumping-check-n2tcksmf\\AxiomAudit.lean"
+      ],
+      "cwd": "C:\\Users\\arfreita\\AppData\\Local\\Temp\\boundary-bumping-check-n2tcksmf",
+      "LEAN_PATH": "C:\\Users\\arfreita\\AppData\\Local\\Temp\\boundary-bumping-check-n2tcksmf;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean",
+      "exit_code": 0,
+      "output": "'BoundaryBumping.exists_clopen_between_component_and_open' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BoundaryBumping.closed_component_meets_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BoundaryBumping.exists_subcontinuum_meeting_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  ],
+  "sources": {
+    "Solution.lean": {
+      "bytes": 4992,
+      "sha256": "c2853827c8e3cce52af39af7fe6d5f66b7df417c8502f9e28846f7f5f40b445f"
+    },
+    "Challenge.lean": {
+      "bytes": 1382,
+      "sha256": "38a68b972b523ccffd1220231eb049170727a679a9fe17a340842d00053099d3"
+    },
+    "comparator.json": {
+      "bytes": 331,
+      "sha256": "7efe95eb4c08934f7b6ef21c1d8d8e0ee6d51ccaacb49802e3f22ee747318dc6"
+    },
+    "lake-manifest.json": {
+      "bytes": 3680,
+      "sha256": "95857d1ebc0f177229807bd928772dadeaee73aafa32adb02d3be7a17bb84e96"
+    },
+    "scripts/CompareTypes.lean": {
+      "bytes": 1112,
+      "sha256": "65d1b75ea3f1e45589285c90188a3a0d901725def5a406275c4ee595af658065"
+    },
+    "scripts/verify.py": {
+      "bytes": 6741,
+      "sha256": "c9ef07c3c1baf45a2a666cb0ef1f8231e4b7f0c7ac0db23eb9507a7230eccc8c"
+    },
+    "formalization.yaml": {
+      "bytes": 3394,
+      "sha256": "4ca12f8a92bca76c8421f7cc61c064aa35c60b49207b483b30d718c46ae882fd"
+    }
+  },
+  "lean_version": "Lean (version 4.35.0-rc2, x86_64-w64-windows-gnu, commit 11acb17ec6b07a8f9e9173e6845197929540936b, Release)",
+  "lean_binary_sha256": "16e2c9c597d71fbbadd2b909c3fad5ea7830a4b7aa0123b93e0f3b19de7b959e",
+  "dependency_paths": [
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean",
+    "C:\\Users\\arfreita\\Documents\\Codex\\2026-10-05\\task-10\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean"
+  ],
+  "status": "pass"
+}
