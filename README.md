@@ -28,9 +28,7 @@ neighborhood of that whole component.
 Install Lean's `elan`, then run:
 
 ```sh
-lake update
-lake exe cache get
-python scripts/verify.py
+python3 scripts/verify.py --lake-build --output .lake/verification.json
 ```
 
 The pins are Lean `v4.35.0-rc2` (compiler commit
@@ -38,6 +36,18 @@ The pins are Lean `v4.35.0-rc2` (compiler commit
 `065356127b1dc0016f66b7283ce0ce2c4055aa55`.
 Verification uses one compiler, at most two CPUs, a 3 GiB Lean memory cap, and a
 60 minute timeout for each stage.
+
+The command fetches the pinned Mathlib cache, runs `lake build --wfail`, then
+freshly compiles Solution and an isolated renamed Challenge, compares the two
+selected theorem types, and audits their transitive axioms. The generated
+receipt is `.lake/verification.json`; the checked-in `verification.json`
+preserves the original desktop verification evidence.
+
+GitHub Actions runs this command on Linux for pushes and pull requests. Its
+Lean setup and checkout actions use commit pins. To check module headers,
+source/Challenge sizes, and dependency pins without Lean, run
+`python3 scripts/verify.py --check-package-only`. With dependencies already
+available, omit `--lake-build` to run only the direct compiler checks.
 
 `Solution.lean` contains the complete proofs and imports only Mathlib.
 `Challenge.lean` has the same two selected statements with deliberate theorem
